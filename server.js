@@ -1,20 +1,7 @@
 /**
  * Created by 1504693 on 23/11/2015.
  */
-/**
- *Node.js first server script
- */
-/**
- *Node.js script 1
 
-var http = require('http')
-var port = process.env.PORT || 1337;
-
-http.createServer(function(request, response) {
-    response.writeHead(200, { 'Content-Type': 'text/plain' });
-    response.end('Hello World\n');
-}).listen(port);
- */
 var http = require('http')
 var port = process.env.PORT || 1337;
 
