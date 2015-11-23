@@ -32,8 +32,11 @@ http.createServer(function(request, response) {
             //Get documents collection
             var collection = db.collection('users');
             //We have a cursor now with out find criteria
-            var results = collection.find({name: 'modulus user'});
-            // do some work here with the database.
+            //var results = collection.find({name: 'modulus user'});
+
+            var results = collection.find({age: {$lte:30}});
+
+            // / do some work here with the database.
             //Lets iterate on the result
             //Lets iterate on the result
             results.each(function (err, result) {
