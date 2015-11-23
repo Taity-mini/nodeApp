@@ -35,9 +35,7 @@ http.createServer(function(request, response) {
             //var results = collection.find({name: 'modulus user'});
 
             var results = collection.find({age: {$lte:30}});
-
-            // / do some work here with the database.
-            //Lets iterate on the result
+            results.sort({age: -1});
             //Lets iterate on the result
             results.each(function (err, result) {
                 //if the result is null, there are no more results, it’s ok to close everything
