@@ -1,13 +1,16 @@
 /**
  * Created by 1504693 on 23/11/2015.
  */
+/**
+ *Node.js first server script
+ */
 
 var http = require('http')
 var port = process.env.PORT || 1337;
 
 var server = http.createServer(function(request, response) {
     response.writeHead(200, {"Content-Type": "text/html"});
-    response.write("<!DOCTYPE 'html'>");
+    response.write('<!DOCTYPE "html">');
     response.write("<html>");
     response.write("<head>");
     response.write("<title>Hello World Page</title>");
@@ -22,4 +25,3 @@ var server = http.createServer(function(request, response) {
 });
 server.listen(port);
 console.log("Server is listening");
-
