@@ -10,7 +10,7 @@ var http = require('http');
 var port = process.env.PORT || 1337;
 
 //Connection URL. This is where your mongodb server is running.
-var url ='mongodb://1504693:qTxA3n[=w4=2{\hJ@ds054288.mongolab.com:54288/1504693';
+var url ='mongodb://1504693:Dutu7akurEhaXuspA523@ds054288.mongolab.com:54288/1504693';
 
 //We need to work with "MongoClient" interface in order to connect to a mongodb server
 var MongoClient = mongodb.MongoClient;
