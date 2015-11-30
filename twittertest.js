@@ -7,7 +7,7 @@ var port = process.env.PORT || 1337;
 
 //Adding url parameters
 var url = require('url');
-var queryData = url.parse(request.url, true).query;
+var querydata = url.parse(request.url, true).query;
 var search = querydata.q;
 
 
