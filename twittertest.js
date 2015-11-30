@@ -6,7 +6,6 @@ var http = require('http');
 var port = process.env.PORT || 1337;
 
 
-
 var client = new Twitter({
     consumer_key: 'LjiTruqMhAUGJvGnFh5vTxW6d',
     consumer_secret: 'p49dXUZoTTK9QYsCjZUWLLwHgfOwHcMxtLdYD6A2bbBW9LXPdV',
