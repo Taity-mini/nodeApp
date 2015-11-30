@@ -7,8 +7,7 @@ var port = process.env.PORT || 1337;
 
 //Adding url parameters
 var url = require('url');
-var querydata = url.parse(request.url, true).query;
-var search = querydata.q;
+
 
 
 var client = new Twitter({
@@ -19,6 +18,11 @@ var client = new Twitter({
 });
 
 http.createServer(function(request, response){
+
+
+    var querydata = url.parse(request.url, true).query;
+    var search = querydata.q;
+
     response.writeHead(200, { 'Content-Type': 'application/json',
         'Access-Control-Allow-Origin' : '*' });
 
