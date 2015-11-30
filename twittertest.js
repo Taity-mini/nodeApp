@@ -6,9 +6,6 @@ var http = require('http');
 var port = process.env.PORT || 1337;
 
 //Adding url parameters
-var url = require('url');
-
-
 
 var client = new Twitter({
     consumer_key: 'LjiTruqMhAUGJvGnFh5vTxW6d',
@@ -19,7 +16,7 @@ var client = new Twitter({
 
 http.createServer(function(request, response){
 
-
+    var url = require('url');
     var querydata = url.parse(request.url, true).query;
     var search = querydata.q;
 
