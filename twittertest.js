@@ -20,8 +20,7 @@ http.createServer(function(request, response){
 
 
     client.get('search/tweets', {q: 'lolcat'}, function(error, tweets){
-    //console.log(tweets);
-
+    console.log(tweets);
     var json = [];
         for(var i=0; i< tweets.status.length; +i++)
         {
